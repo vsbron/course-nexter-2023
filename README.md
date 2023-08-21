@@ -3,7 +3,8 @@
 Landing page of Nexter property sale app. Created as a part of Advanced CSS & Sass project in 2023.
 
 ## Features
- - 
+ - Homes details and prices;
+ - Full-width image gallery;
 
 ## Details
  - Page is built using CSS Grid layout;
