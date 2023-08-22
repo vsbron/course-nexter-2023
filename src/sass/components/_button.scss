@@ -14,4 +14,9 @@
   &:hover {
     background-color: $color-primary-dark;
   }
+
+  &--header {
+    align-self: start;
+    justify-self: start;
+  }
 }
