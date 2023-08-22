@@ -12,6 +12,7 @@ Landing page of Nexter property sale app. Created as a part of Advanced CSS & Sa
  - Stylesheets are written using SCSS;
  - All the elements/classes are written with BEM methodology;
  - Stylesheets files are sorted using 7-1 CSS architecture;
+ - No JavaScript used;
 
 ## Live version
 
