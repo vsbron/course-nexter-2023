@@ -2,4 +2,42 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  &__btn {
+
+    &-cont {
+      padding: 10px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+
+    border: none;
+    border-radius: 0;
+    background-color: $color-white;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: .5rem;
+    display: block;
+    pointer-events: none;
+
+    &:before, &:after {
+      content: "";
+      display: block;
+      background-color: $color-white;
+      height: 2px;
+      width: 4.5rem;
+      transition: all .2s ease;
+    }
+
+    &:before { transform: translateY(-12px) }
+    &:after { transform: translateY(10px) } 
+  
+    &-cont:hover & {
+      &:before { transform: translateY(-17px) }
+      &:after { transform: translateY(15px) }
+    }
+  }
 }

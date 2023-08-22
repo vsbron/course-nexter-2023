@@ -262,6 +262,37 @@ a:visited {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
+  .sidebar__btn {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: .5rem;
+    display: block;
+    pointer-events: none; }
+    .sidebar__btn-cont {
+      padding: 10px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      cursor: pointer; }
+    .sidebar__btn:before, .sidebar__btn:after {
+      content: "";
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      width: 4.5rem;
+      transition: all .2s ease; }
+    .sidebar__btn:before {
+      transform: translateY(-12px); }
+    .sidebar__btn:after {
+      transform: translateY(10px); }
+    .sidebar__btn-cont:hover .sidebar__btn:before {
+      transform: translateY(-17px); }
+    .sidebar__btn-cont:hover .sidebar__btn:after {
+      transform: translateY(15px); }
 
 .footer {
   background-color: #101d2c;
