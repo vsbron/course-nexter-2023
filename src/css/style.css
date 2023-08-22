@@ -265,4 +265,39 @@ a:visited {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: stretch; }
+  .nav__link:link, .nav__link:visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1.8rem 1.5rem 1.5rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .2s ease; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-align: center;
+  width: 70%;
+  margin: 6rem auto 0; }
+  .copyright a:hover,
+  .copyright a:active {
+    text-decoration: none; }
