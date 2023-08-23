@@ -3,6 +3,11 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
 
+  @include respond(tab-port) {
+    grid-column: 1 / -1;
+    grid-row: sidebar-start / sidebar-end;
+  }
+
   &__btn {
 
     &-cont {
@@ -12,6 +17,12 @@
       justify-content: center;
       margin-top: 2rem;
       cursor: pointer;
+
+      @include respond(tab-port) {
+        padding: 5px 20px;
+        justify-content: end;
+        align-items: center;
+      }
     }
 
     border: none;
@@ -38,6 +49,16 @@
     &-cont:hover & {
       &:before { transform: translateY(-17px) }
       &:after { transform: translateY(15px) }
+    }
+
+    @include respond(tab-land) {
+      &:before { transform: translateY(-8px) }
+      &:after { transform: translateY(6px) } 
+    
+      &-cont:hover & {
+        &:before { transform: translateY(-12px) }
+        &:after { transform: translateY(10px) }
+      }
     }
   }
 }

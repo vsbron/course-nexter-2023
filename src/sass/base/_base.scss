@@ -18,11 +18,15 @@ html {
   font-size: 62.5%;
   scrollbar-color: $color-primary $color-gray-light-1;
   scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
 }
 
 body {
   box-sizing: border-box;
-  font-size: $default-font-size;
+  font-size: 1.2rem;
   line-height: 1.6;
   font-weight: 300;
   font-family: $font-primary;
@@ -35,4 +39,13 @@ a:visited { color: currentColor }
   display: grid;
   grid-template-rows: 75vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+  @include respond(tab-port) {
+    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] 75vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+  
+  @include respond(phone-big) {
+    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] calc(100vh - 6.5rem);
+  }
 }

@@ -6,6 +6,7 @@ Landing page of Nexter property sale app. Created as a part of Advanced CSS & Sa
  - Sidebar with dummy menu button;
  - Homes details and prices;
  - Full-width image gallery;
+ - Responsive version for mobile devices (improved over course's version);
 
 ## Details
  - Page is built using CSS Grid layout;
