@@ -26,7 +26,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: $default-font-size;
   line-height: 1.6;
   font-weight: 300;
   font-family: $font-primary;
@@ -46,6 +46,6 @@ a:visited { color: currentColor }
   }
   
   @include respond(phone-big) {
-    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] calc(100vh - 6.5rem);
+    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] calc(82vh - 6.5rem);
   }
 }

@@ -7,6 +7,10 @@
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   align-items: flex-start;
 
+  @include respond (phone-small) {
+    margin: 10rem 0;
+  }
+
   &__feature {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -23,5 +27,9 @@
 
   &__text {
     font-size: 1.7rem;
+
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+    }
   }
 }

@@ -23,6 +23,10 @@
   &__logo {
     height: 3rem;
     justify-self: center;
+
+    @include respond (phone-small) {
+      justify-self: start;
+    }
   }
 
   &__seenon {
@@ -56,6 +60,16 @@
         max-height: 2.5rem;
         max-width: 100%;
         filter: brightness(70%);
+  
+        @include respond(phone-big) {
+          max-height: 3rem;
+        }
+      }
+
+      @include respond (phone-small) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 5rem;
+        justify-items: flex-start;
       }
     }
 

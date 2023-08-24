@@ -49,3 +49,65 @@
     text-decoration: none;
   }
 }
+
+@include respond(tab-port) {
+
+  .footer {
+    padding: 7rem 5rem;
+  }
+
+  .nav {
+    gap: 0;
+
+    &__link:link,
+    &__link:visited {
+      padding: 10px 5px;
+      font-size: 14px;
+    }
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+  }
+
+}
+
+@include respond(phone-big) {
+
+  .footer {
+    padding: 8rem 12rem;
+  }
+
+  .copyright {
+    margin-top: 5rem;
+  }
+
+}
+
+@include respond(phone) {
+
+  .footer {
+    padding: 6rem 10rem;
+  }
+
+  .copyright {
+    margin-top: 4rem;
+  }
+
+}
+
+@include respond(phone-small) {
+
+  .nav {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 6rem 2rem;
+  }
+
+  .copyright {
+    margin-top: 3rem;
+  }
+
+}
