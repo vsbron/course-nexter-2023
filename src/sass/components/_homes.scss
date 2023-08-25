@@ -108,7 +108,6 @@
 
   @include respond (phone-big) {
 
-
     &__location, &__rooms, &__area, &__price {
       gap: 0 1rem;
       margin-left: 1.5rem;

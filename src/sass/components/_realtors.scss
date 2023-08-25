@@ -48,7 +48,6 @@
     }
   }
   
-    
   @include respond(phone) {
     &__list {
       grid-template-columns: min-content max-content;
