@@ -31,17 +31,26 @@
     <div class="realtors">
       <h3 class="heading-3">Top 3 Realtors</h3>
       <div class="realtors__list">
-        <img src="src/img/realtor-1.jpeg" class="realtors__img" alt="Realtor 1" />
+        <figure class="realtors__img">
+          <img srcset="src/img/realtor-1.jpg 300w, src/img/realtor-1-md.jpg 150w, src/img/realtor-1-sm.jpg 70w" src="src/img/realtor-1.jpg"
+          sizes="(max-width: 48em) 6vw, (max-width: 75em) 5vw, 70px" alt="Realtor 1" />
+        </figure>
         <div class="realtors__details">
           <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
           <p class="realtors__sold">245 houses sold</p>
         </div>
-        <img src="src/img/realtor-2.jpeg" class="realtors__img" alt="Realtor 2" />
+        <figure class="realtors__img">
+          <img srcset="src/img/realtor-2.jpg 300w, src/img/realtor-2-md.jpg 150w, src/img/realtor-2-sm.jpg 70w" src="src/img/realtor-2-sm.jpg"
+          sizes="(max-width: 48em) 6vw, (max-width: 75em) 5vw, 70px" alt="Realtor 2" />
+        </figure>
         <div class="realtors__details">
           <h4 class="heading-4 heading-4--light">Kim Brown</h4>
           <p class="realtors__sold">212 houses sold</p>
         </div>
-        <img src="src/img/realtor-3.jpeg" class="realtors__img" alt="Realtor 3" />
+        <figure class="realtors__img">
+          <img srcset="src/img/realtor-3.jpg 300w, src/img/realtor-3-md.jpg 150w, src/img/realtor-3-sm.jpg 70w" src="src/img/realtor-3-sm.jpg"
+          sizes="(max-width: 48em) 6vw, (max-width: 75em) 5vw, 70px" alt="Realtor 3" />
+        </figure>
         <div class="realtors__details">
           <h4 class="heading-4 heading-4--light">Toby Ramsey</h4>
           <p class="realtors__sold">198 houses sold</p>
@@ -83,8 +92,14 @@
     </section>
 
     <div class="story__pictures">
-      <img src="src/img/story-1.jpeg" loading="lazy" class="story__img--1" alt="Couple with new house" />
-      <img src="src/img/story-2.jpeg" loading="lazy" class="story__img--2" alt="New house" />
+      <figure class="story__img--1">
+        <img srcset="src/img/story-1.jpg 2000w, src/img/story-1-md.jpg 1300w, src/img/story-1-sm.jpg 615w" src="src/img/story-1-sm.jpg"
+        sizes="(max-width: 48em) 59vw, 32vw" loading="lazy" alt="Couple with new house" />
+      </figure>
+      <figure class="story__img--2">
+        <img srcset="src/img/story-2.jpg 2000w, src/img/story-2-md.jpg 1200w, src/img/story-2-sm.jpg 560w" src="src/img/story-2-sm.jpg"
+        sizes="(max-width: 48em) 44vw, 29vw" loading="lazy" alt="New house" />
+      </figure>
     </div>
 
     <div class="story__content">
@@ -96,7 +111,10 @@
 
     <section class="homes">
       <div class="homes__home">
-        <img src="src/img/house-1.jpeg" loading="lazy" class="homes__img" alt="House picture 1" title="Beautiful Family House in USA" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-1.jpg 1000w, src/img/house-1-sm.jpg 435w" src="src/img/house-1-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 1" title="Beautiful Family House in USA" />
+        </figure>
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Beautiful Family House</h5>
         <div class="homes__location">
@@ -119,7 +137,10 @@
       </div>
 
       <div class="homes__home">
-        <img src="src/img/house-2.jpeg" loading="lazy" class="homes__img" alt="House picture 2" title="Modern Glass Villa in Canada" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-2.jpg 1000w, src/img/house-2-sm.jpg 435w" src="src/img/house-2-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 2" title="Modern Glass Villa in Canada" />
+        </figure>
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Modern Glass Villa</h5>
         <div class="homes__location">
@@ -142,7 +163,10 @@
       </div>
 
       <div class="homes__home">
-        <img src="src/img/house-3.jpeg" loading="lazy" class="homes__img" alt="House picture 3" title="Cozy Country House in UK" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-3.jpg 1000w, src/img/house-3-sm.jpg 435w" src="src/img/house-3-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 3" title="Cozy Country House in UK" />
+        </figure>
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Cozy Country House</h5>
         <div class="homes__location">
@@ -165,7 +189,11 @@
       </div>
 
       <div class="homes__home">
-        <img src="src/img/house-4.jpeg" loading="lazy" class="homes__img" alt="House picture 4" title="Large Rustical Villa in Portugal" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-4.jpg 1000w, src/img/house-4-sm.jpg 435w" src="src/img/house-4-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 4" title="Large Rustical Villa in Portugal" />
+        </figure>
+        <img src="src/img/house-4.jpg" loading="lazy" class="homes__img" alt="House picture 4" title="Large Rustical Villa in Portugal" />
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Large Rustical Villa</h5>
         <div class="homes__location">
@@ -188,7 +216,10 @@
       </div>
 
       <div class="homes__home">
-        <img src="src/img/house-5.jpeg" loading="lazy" class="homes__img" alt="House picture 5" title="Majestic Palace House in Germany" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-5.jpg 1000w, src/img/house-5-sm.jpg 435w" src="src/img/house-5-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 4" title="Majestic Palace House in Germany" />
+        </figure>
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Majestic Palace House</h5>
         <div class="homes__location">
@@ -211,7 +242,10 @@
       </div>
 
       <div class="homes__home">
-        <img src="src/img/house-6.jpeg" loading="lazy" class="homes__img" alt="House picture 6" title="Modern Family Apartment in Italy" />
+        <figure class="homes__img">
+          <img srcset="src/img/house-6.jpg 1000w, src/img/house-6-sm.jpg 435w" src="src/img/house-6-sm.jpg"
+          sizes="(max-width: 34em) 82vw, (max-width: 48em) 42vw, (max-width: 82.5em) 28vw, 327px" loading="lazy" alt="House picture 6" title="Modern Family Apartment in Italy" />
+        </figure>
         <svg class="homes__like"><use xlink:href="src/img/sprite.svg#icon-heart-full"></use></svg>
         <h5 class="homes__name">Modern Family Apartment</h5>
         <div class="homes__location">
@@ -232,28 +266,68 @@
         </div>
         <button class="btn">Contact realtor</button>
       </div>
-
     </section>
 
     <section class="gallery">
-      <figure class="gallery__item gallery__item--1"><img src="src/img/gal-1.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 1" /></figure>
-      <figure class="gallery__item gallery__item--2"><img src="src/img/gal-2.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 2" /></figure>
-      <figure class="gallery__item gallery__item--3"><img src="src/img/gal-3.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 3" /></figure>
-      <figure class="gallery__item gallery__item--4"><img src="src/img/gal-4.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 4" /></figure>
-      <figure class="gallery__item gallery__item--5"><img src="src/img/gal-5.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 5" /></figure>
-      <figure class="gallery__item gallery__item--6"><img src="src/img/gal-6.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 6" /></figure>
-      <figure class="gallery__item gallery__item--7"><img src="src/img/gal-7.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 7" /></figure>
-      <figure class="gallery__item gallery__item--8"><img src="src/img/gal-8.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 8" /></figure>
-      <figure class="gallery__item gallery__item--9"><img src="src/img/gal-9.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 9" /></figure>
-      <figure class="gallery__item gallery__item--10"><img src="src/img/gal-10.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 10" /></figure>
-      <figure class="gallery__item gallery__item--11"><img src="src/img/gal-11.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 11" /></figure>
-      <figure class="gallery__item gallery__item--12"><img src="src/img/gal-12.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 12" /></figure>
-      <figure class="gallery__item gallery__item--13"><img src="src/img/gal-13.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 13" /></figure>
-      <figure class="gallery__item gallery__item--14"><img src="src/img/gal-14.jpeg" loading="lazy" class="gallery__img" alt="Gallery image 14" /></figure>
+      <figure class="gallery__item gallery__item--1">
+        <img srcset="src/img/gal-1.jpg 1000w, src/img/gal-1-md.jpg 500w, src/img/gal-1-sm.jpg 150w" src="src/img/gal-1-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 1" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img srcset="src/img/gal-2.jpg 1000w, src/img/gal-2-md.jpg 670w, src/img/gal-2-sm.jpg 300w" src="src/img/gal-2-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 35rem" class="gallery__img" loading="lazy" alt="Gallery image 2" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img srcset="src/img/gal-3.jpg 1000w, src/img/gal-3-md.jpg 444w, src/img/gal-3-sm.jpg 150w" src="src/img/gal-3-md.jpg"
+          sizes="(max-width: 37.5em) 40vw, 12rem" class="gallery__img" loading="lazy" alt="Gallery image 3" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img srcset="src/img/gal-4.jpg 1000w, src/img/gal-4-md.jpg 500w, src/img/gal-4-sm.jpg 150w" src="src/img/gal-4-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 4" />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img srcset="src/img/gal-5.jpg 1000w, src/img/gal-5-md.jpg 500w, src/img/gal-5-sm.jpg 150w" src="src/img/gal-5-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 5" />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img srcset="src/img/gal-6.jpg 1000w, src/img/gal-6-md.jpg 500w, src/img/gal-6-sm.jpg 250w" src="src/img/gal-6-md.jpg"
+          sizes="(max-width: 37.5em) 40vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 6" />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img srcset="src/img/gal-7.jpg 1000w, src/img/gal-7-md.jpg 500w, src/img/gal-7-sm.jpg 250w" src="src/img/gal-7-md.jpg"
+          sizes="(max-width: 37.5em) 40vw, 12rem" class="gallery__img" loading="lazy" alt="Gallery image 7" />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img srcset="src/img/gal-8.jpg 1000w, src/img/gal-8-md.jpg 500w, src/img/gal-8-sm.jpg 225w" src="src/img/gal-8-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 8" />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img srcset="src/img/gal-9.jpg 1000w, src/img/gal-9-md.jpg 480w, src/img/gal-9-sm.jpg 150w" src="src/img/gal-9-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 12rem" class="gallery__img" loading="lazy" alt="Gallery image 9" />
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+        <img srcset="src/img/gal-10.jpg 1000w, src/img/gal-10-md.jpg 470w, src/img/gal-10-sm.jpg 150w" src="src/img/gal-10-md.jpg"
+          sizes="(max-width: 37.5em) 26vw, 12rem" class="gallery__img" loading="lazy" alt="Gallery image 10" />
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+        <img srcset="src/img/gal-11.jpg 1000w, src/img/gal-11-md.jpg 450w, src/img/gal-11-sm.jpg 200w" src="src/img/gal-11-md.jpg"
+          sizes="26vw, 23rem" class="gallery__img" loading="lazy" alt="Gallery image 11" />
+      </figure>
+      <figure class="gallery__item gallery__item--12">
+        <img srcset="src/img/gal-12.jpg 1000w, src/img/gal-12-md.jpg 450w, src/img/gal-12-sm.jpg 200w" src="src/img/gal-12-md.jpg"
+          sizes="12rem" class="gallery__img" loading="lazy" alt="Gallery image 12" />
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+        <img srcset="src/img/gal-13.jpg 1000w, src/img/gal-13-md.jpg 700w, src/img/gal-13-sm.jpg 225w" src="src/img/gal-13-md.jpg"
+          sizes="35rem" class="gallery__img" loading="lazy" alt="Gallery image 13" />
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+        <img srcset="src/img/gal-14.jpg 1000w, src/img/gal-14-md.jpg 400w, src/img/gal-14-sm.jpg 150w" src="src/img/gal-14-md.jpg"
+          sizes="12rem" class="gallery__img" loading="lazy" alt="Gallery image 14" />
+      </figure>
     </section>
 
     <footer class="footer">
-
       <ul class="nav">
         <li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
@@ -263,7 +337,6 @@
         <li class="nav__item"><a href="#" class="nav__link">Come work with us</a></li>
       </ul>
       <p class="copyright">Built by VSBroN as a part of the Advanced CSS and Sass online learning course.<br />This project is available on <a href="https://github.com/vsbron/course-nexter-2023" target="_blank">GitHub</a>.<br />&copy;2023. All rights reserved.</p>
-
     </footer>
 
   </body>

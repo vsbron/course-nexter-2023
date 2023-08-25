@@ -3,7 +3,12 @@
   &__pictures {
     background-color: $color-primary;
     grid-column: full-start / col-end 4;
-    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-md.jpg);
+
+    @media only screen and (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min-width: 120.25em) {
+      background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back.jpg);
+    }
+    
     background-size: cover;
 
     display: grid;
@@ -14,6 +19,14 @@
     @include respond(phone-big) {
       grid-column: full-start / full-end;
       padding: 6rem;
+    }
+  
+    @include respond(phone-small) {
+      background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-sm.jpg);
+
+      @media only screen and (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2){
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../img/back-md.jpg);
+      }
     }
   }
 

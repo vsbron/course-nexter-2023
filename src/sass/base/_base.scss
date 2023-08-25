@@ -46,6 +46,6 @@ a:visited { color: currentColor }
   }
   
   @include respond(phone-big) {
-    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] calc(82vh - 6.5rem);
+    grid-template-rows: [sidebar-start] 6.5rem [sidebar-end] 75rem;
   }
 }

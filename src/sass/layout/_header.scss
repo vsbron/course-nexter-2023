@@ -1,7 +1,7 @@
 .header {
   grid-column: full-start / col-end 6;
 
-  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
   padding: 4rem 8rem 8rem;
@@ -14,6 +14,11 @@
   
   @include respond(phone-big) {
     grid-column: full-start / full-end;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero-sm.jpg);
+
+    @media only screen and (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2){
+      background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpg);
+    }
   }
     
   @include respond(phone) {
